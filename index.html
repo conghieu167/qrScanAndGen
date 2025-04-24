@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>QR Code Tool</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsqr/dist/jsQR.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Tạo mã QR</h2>
+      <input type="text" id="qr-input" placeholder="Nhập nội dung cần mã hóa" />
+      <button onclick="generateQR()">Tạo QR</button>
+      <div id="qrcode"></div>
+    </div>
+    <div class="container">
+      <h2>Quét mã QR từ ảnh</h2>
+      <input type="file" accept="image/*" onchange="scanImage(event)" />
+      <p>Kết quả từ ảnh: <span id="img-result">...</span></p>
+      <canvas id="canvas"></canvas>
+    </div>
+    <div class="container">
+      <h2>Quét mã QR bằng camera</h2>
+      <div id="reader"></div>
+      <p>Kết quả: <span id="result">...</span></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

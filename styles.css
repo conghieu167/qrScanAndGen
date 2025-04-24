@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f7f9fc;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h2 {
+  color: #2c3e50;
+  margin-top: 40px;
+}
+.container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+  margin-bottom: 40px;
+}
+input[type="text"],
+input[type="file"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #2980b9;
+}
+#qrcode {
+  margin-top: 20px;
+}
+#reader {
+  margin-top: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+}
+#result,
+#img-result {
+  font-weight: bold;
+  color: #000000;
+  margin-top: 10px;
+}
+.paste-box {
+  width: 100%;
+  min-height: 150px;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  padding: 12px;
+  background-color: #fefefe;
+  color: #888;
+  text-align: center;
+  font-style: italic;
+  outline: none;
+}
+#canvas {
+  display: none;
+}
